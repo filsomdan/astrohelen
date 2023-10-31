@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="header-logo">
+                    <img src="/img/svg/logo.svg" alt="logo">
+                </div>
+                <div class="header-socials">
+                    <div class="header-socials-block">
+                        <a target="_blank" href="http://wa.me/79262336262">
+                            <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25.534 5.07584C22.7373 2.28882 19.0083 0.740479 15.0721 0.740479C6.88912 0.740479 0.259831 7.34675 0.259831 15.5014C0.259831 18.0819 0.984911 20.6625 2.2279 22.8302L0.15625 30.4687L8.02853 28.4042C10.2038 29.5397 12.5862 30.159 15.0721 30.159C23.2552 30.159 29.8845 23.5528 29.8845 15.3981C29.7809 11.5789 28.3307 7.86286 25.534 5.07584ZM22.2193 20.7657C21.9086 21.5915 20.4584 22.4173 19.7334 22.5205C19.1119 22.6237 18.2832 22.6238 17.4545 22.4173C16.9366 22.2109 16.2116 22.0044 15.3829 21.5915C11.6539 20.0432 9.27152 16.3271 9.06436 16.0175C8.85719 15.811 7.51062 14.0562 7.51062 12.1982C7.51062 10.3402 8.44286 9.51443 8.75361 9.10154C9.06435 8.68865 9.47869 8.68865 9.78943 8.68865C9.9966 8.68865 10.3073 8.68865 10.5145 8.68865C10.7217 8.68865 11.0324 8.58542 11.3432 9.30799C11.6539 10.0305 12.379 11.8886 12.4826 11.9918C12.5862 12.1982 12.5862 12.4047 12.4826 12.6111C12.379 12.8176 12.2754 13.024 12.0682 13.2305C11.8611 13.4369 11.6539 13.7466 11.5503 13.8498C11.3432 14.0562 11.136 14.2627 11.3432 14.5724C11.5503 14.9852 12.2754 16.1207 13.4148 17.1529C14.865 18.3916 16.0044 18.8045 16.4187 19.0109C16.8331 19.2174 17.0402 19.1142 17.2474 18.9077C17.4545 18.7013 18.1796 17.8755 18.3868 17.4626C18.594 17.0497 18.9047 17.1529 19.2155 17.2562C19.5262 17.3594 21.3907 18.2884 21.7014 18.4948C22.1158 18.7013 22.3229 18.8045 22.4265 18.9077C22.5301 19.2174 22.5301 19.94 22.2193 20.7657Z" fill="#170E39"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header-socials-block">
+                        <a target="_blank" href="https://instagram.com/astrohelen888?igshid=OGQ5ZDc2ODk2ZA==">
+                            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.6553 2.71462C18.4076 2.71462 18.9193 2.71462 20.4543 2.71462C21.8187 2.71462 22.501 3.05573 23.0126 3.22629C23.6949 3.56741 24.2066 3.73796 24.7182 4.24964C25.2299 4.76131 25.571 5.27298 25.7416 5.95521C25.9121 6.46689 26.0827 7.14912 26.2532 8.51358C26.2532 10.0486 26.2532 10.3897 26.2532 14.3125C26.2532 18.2354 26.2532 18.5765 26.2532 20.1115C26.2532 21.476 25.9121 22.1582 25.7416 22.6699C25.4005 23.3521 25.2299 23.8638 24.7182 24.3755C24.2066 24.8871 23.6949 25.2282 23.0126 25.3988C22.501 25.5694 21.8187 25.7399 20.4543 25.9105C18.9193 25.9105 18.5781 25.9105 14.6553 25.9105C10.7325 25.9105 10.3914 25.9105 8.85635 25.9105C7.49189 25.9105 6.80966 25.5694 6.29799 25.3988C5.61576 25.0577 5.10408 24.8871 4.59241 24.3755C4.08074 23.8638 3.73962 23.3521 3.56906 22.6699C3.39851 22.1582 3.22795 21.476 3.05739 20.1115C3.05739 18.5765 3.05739 18.2354 3.05739 14.3125C3.05739 10.3897 3.05739 10.0486 3.05739 8.51358C3.05739 7.14912 3.39851 6.46689 3.56906 5.95521C3.91018 5.27298 4.08074 4.76131 4.59241 4.24964C5.10408 3.73796 5.61576 3.39685 6.29799 3.22629C6.80966 3.05573 7.49189 2.88517 8.85635 2.71462C10.3914 2.71462 10.903 2.71462 14.6553 2.71462ZM14.6553 0.15625C10.7325 0.15625 10.3914 0.15625 8.85635 0.15625C7.32133 0.15625 6.29799 0.497366 5.4452 0.838482C4.59241 1.1796 3.73962 1.69127 2.88683 2.54406C2.03404 3.39685 1.69293 4.07908 1.18126 5.10243C0.84014 5.95521 0.669581 6.97856 0.499023 8.51358C0.499023 10.0486 0.499023 10.5603 0.499023 14.3125C0.499023 18.2354 0.499023 18.5765 0.499023 20.1115C0.499023 21.6465 0.84014 22.6699 1.18126 23.5227C1.52237 24.3755 2.03404 25.2282 2.88683 26.081C3.73962 26.9338 4.42185 27.2749 5.4452 27.7866C6.29799 28.1277 7.32133 28.2983 8.85635 28.4688C10.3914 28.4688 10.903 28.4688 14.6553 28.4688C18.4076 28.4688 18.9193 28.4688 20.4543 28.4688C21.9893 28.4688 23.0126 28.1277 23.8654 27.7866C24.7182 27.4455 25.571 26.9338 26.4238 26.081C27.2766 25.2282 27.6177 24.546 28.1294 23.5227C28.4705 22.6699 28.6411 21.6465 28.8116 20.1115C28.8116 18.5765 28.8116 18.0648 28.8116 14.3125C28.8116 10.5603 28.8116 10.0486 28.8116 8.51358C28.8116 6.97856 28.4705 5.95521 28.1294 5.10243C27.7883 4.24964 27.2766 3.39685 26.4238 2.54406C25.571 1.69127 24.8888 1.35016 23.8654 0.838482C23.0126 0.497366 21.9893 0.326808 20.4543 0.15625C18.9193 0.15625 18.5781 0.15625 14.6553 0.15625Z" fill="#170E39"/>
+                                <path d="M14.6553 6.97856C10.5619 6.97856 7.32133 10.2192 7.32133 14.3125C7.32133 18.4059 10.5619 21.6465 14.6553 21.6465C18.7487 21.6465 21.9893 18.4059 21.9893 14.3125C21.9893 10.2192 18.7487 6.97856 14.6553 6.97856ZM14.6553 19.0882C12.097 19.0882 9.8797 17.0415 9.8797 14.3125C9.8797 11.7542 11.9264 9.53693 14.6553 9.53693C17.2137 9.53693 19.4309 11.5836 19.4309 14.3125C19.4309 16.8709 17.2137 19.0882 14.6553 19.0882Z" fill="#170E39"/>
+                                <path d="M22.1599 8.51358C23.1018 8.51358 23.8654 7.74997 23.8654 6.808C23.8654 5.86604 23.1018 5.10243 22.1599 5.10243C21.2179 5.10243 20.4543 5.86604 20.4543 6.808C20.4543 7.74997 21.2179 8.51358 22.1599 8.51358Z" fill="#170E39"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header-socials-block">
+                        <a target="_blank" href="https://t.me/astrohelen">
+                            <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27.3247 1.84008L23.0701 24.0514C23.0701 24.0514 22.4748 25.5914 20.8395 24.8528L11.0231 17.0586L10.9776 17.0356C12.3036 15.8027 22.5857 6.22915 23.0351 5.7952C23.7308 5.12312 23.2989 4.72301 22.4912 5.2307L7.30315 15.2188L1.44364 13.1772C1.44364 13.1772 0.52153 12.8375 0.432821 12.099C0.342944 11.3592 1.47399 10.9591 1.47399 10.9591L25.3614 1.25503C25.3614 1.25503 27.3247 0.361742 27.3247 1.84008Z" fill="#170E39"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="header-bottom-links">
+                    <ul>
+                        <li><a href="#help">Чем могу помочь</a></li>
+                        <li><a href="#history">История и опыт</a></li>
+                        <li><a href="#approach">Подход</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="cover">
+        <div class="cover-content">
+            <div class="cover-title">
+                <h1>Елена Васильевна <br> Кузнецова</h1>
+            </div>
+            <div class="cover-subtitle">
+                <span>Практикующий Астролог</span>
+            </div>
+            <div class="cover-buttons">
+                <div class="cover-button">
+                    <a class='btn btn--gold horoscope-btn'>Заказать гороскоп</a>
+                </div>
+                <div class="cover-button">
+                    <a href="#reviews" class='btn btn--transparent'>Узнать подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="help">
+        <div class="container">
+            <div class="section-title">
+                <h2>Чем я могу вам помочь?</h2>
+            </div>
+            <div class="reason-content">
+                <div class="reason-block">
+                    <div class="reason-img">
+                        <img src="/img/svg/reason-1.svg" alt="reason-1">
+                    </div>
+                    <div class="reason-text">
+                        <span>Астрология позволяет ответить на многие вопросы, благодаря прогностике и хорарной (hour - час) астрологии. Натальная карта или индивидуальный гороскоп являются основой всех прогнозов.</span>
+                    </div>
+                </div>
+                <div class="reason-block">
+                    <div class="reason-img">
+                        <img src="/img/svg/reason-2.svg" alt="reason-2">
+                    </div>
+                    <div class="reason-text">
+                        <span>Темы прогнозов самые разные: карьера и работа, финансы, любовь и брак, совместимость в паре, переезд или эмиграция, рождение детей и многие другие. Сначала уточняется точное время астрологом по данным рождения - для точности прогноза и проводится индивидуальная консультация.</span>
+                    </div>
+                </div>
+                <div class="reason-block">
+                    <div class="reason-img">
+                        <img src="/img/svg/reason-3.svg" alt="reason-3">
+                    </div>
+                    <div class="reason-text">
+                        <span>Правильно сформулированный вопрос и опыт астролога позволяют дать точные даты события и рекомендации вариантов действий. Свобода выбора остаëтся всегда за человеком.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="history" id="history">
+        <div class="container">
+            <div class="section-title">
+                <h2>История и Опыт</h2>
+            </div>
+            <div class="history-content">
+                <div class="history-back">
+                    <img src="/img/png/history-back.png" alt="history-back">
+                </div>
+                <div class="history-top">
+                    <span>Профессиональный Астролог Елена Васильевна Кузнецова получила образование в Московской Академии Астрологии - МАА в 2000 г.  под руководством Левина М. Б. Практиковать, как астролог начала со 2 курса Академии. <br> Первая профессия модельер - конструктов женской одежды, посвятила этому творчеству 13 лет.</span>
+                </div>
+                <div class="history-bottom">
+                    <div class="history-bottom__img">
+                        <img src="/img/png/history.png" alt="history">
+                    </div>
+                    <div class="history-bottom__text">
+                        <p>Работала в таких известных журналах: Работница с 2000 - 2013 гг,  El de bote - остров красоты 2000 - 2002 гг. Собеседник. Участвовала как эксперт на ТВ 3, Пятница, ТВ 1. Три года работала, как эксперт Астро ТВ. Участник 10 битвы экстрасенсов. </p>
+                        <p>Имею свой сайт с 2008 года <a href="https://astro-helen.ru/" target="_blank">www.astro-helen.ru</a></p>
+                        <p>Провожу личные консультации с 1993 г. Все консультации начинаются с ректификации - уточнения времени рождения. </p>
+                        <p>В зависимости от заданного вопроса, применяю методы прогнозов: соляр, транзиты, профекции, прогрессии, дирекции. Синастрии - совместимость в паре.
+                            Хорарная астрология - ответ на вопрос, где не нужно знать дату и время рождения.</p>
+                        <p>Знания в медицинской астрологии. Есть медицинское начальное образование и диплом целителя по методике бесконтактного массажа Джуны.</p>
+                        <a class="btn btn--gold horoscope-btn">Заказать гороскоп</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="date">
+        <div class="container">
+            <div class="date-content">
+                <div class="date-back">
+                    <img src="/img/png/date-back.png" alt="date-back">
+                </div>
+                <div class="dates-title">
+                    <span>Постоянно повышаю свой уровень знаний и имеет свои наработки в Астрологии. </span>
+                </div>
+                <div class="dates-blocks">
+                    <div class="dates-block">
+                        <div class="dates-block-number">
+                            <span>2004 г.</span>
+                        </div>
+                        <div class="dates-block-text">
+                            <span>Получила образование в школе научной и медицинской Астрологии С. Д. Безбородного.</span>
+                        </div>
+                    </div>
+                    <div class="dates-block">
+                        <div class="dates-block-number">
+                            <span>2006 г.</span>
+                        </div>
+                        <div class="dates-block-text">
+                            <span>Освоила нумерологию.</span>
+                        </div>
+                    </div>
+                    <div class="dates-block">
+                        <div class="dates-block-number">
+                            <span>2 - 3.10.2006</span>
+                        </div>
+                        <div class="dates-block-text">
+                            <span>Прошла курс у астролога Крис Макрэй (Канада) "Методы реновации в индивидуальной и мунданной астрологииастрологии". " Оценка силы и влияния затмений. "</span>
+                        </div>
+                    </div>
+                    <div class="dates-block">
+                        <div class="dates-block-number">
+                            <span>2008 г.</span>
+                        </div>
+                        <div class="dates-block-text">
+                            <span>Посещала семинары известного американского астролога по хорарной астрологии Альфа Левуа - "Мастерство астрологического консультирования. "</span>
+                        </div>
+                    </div>
+                    <div class="dates-block">
+                        <div class="dates-block-number">
+                            <span>2009 г.</span>
+                        </div>
+                        <div class="dates-block-text">
+                            <span>Получила сертификат об окончании курса от известного американского Астролога Ноэль Тиль.</span>
+                        </div>
+                    </div>
+                    <div class="dates-block">
+                        <div class="dates-block-number">
+                            <span>2004 - 2009 гг.</span>
+                        </div>
+                        <div class="dates-block-text">
+                            <span>Получила образование в школе научной и медицинской Астрологии С. Д. Безбородного. </span>
+                        </div>
+                    </div>
+                    <div class="dates-block">
+                        <div class="dates-block-number">
+                            <span>2011 г.</span>
+                        </div>
+                        <div class="dates-block-text">
+                            <span>Получила образование по рунической магии, преподаватель И. В. Волпянская.</span>
+                        </div>
+                    </div>
+                    <div class="dates-block">
+                        <div class="dates-block-number">
+                            <span>2022 г.</span>
+                        </div>
+                        <div class="dates-block-text">
+                            <span>Получила образование в предсказание Таро.</span>
+                        </div>
+                    </div>
+                    <div class="dates-block">
+                        <div class="dates-block-number">
+                            <span>2021 - 2023 гг.</span>
+                        </div>
+                        <div class="dates-block-text">
+                            <span>Получила сертификат об образовании в школе К. Н. Дарагана.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="links">
+        <div class="container">
+            <div class="links-content">
+                <div class="links-text">
+                    <span>Прогнозы и статьи смотрите и читайте на сайте astro-helen.ru и в Телеграмм канале</span>
+                </div>
+                <div class="links-buttons">
+                    <div class="link-button"><a target="_blank" href="https://t.me/astrohelen" class="btn btn--blue">Перейти в телеграмм канал</a></div>
+                    <div class="link-button"><a class="btn btn--gold horoscope-btn">Заказать гороскоп</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="certificates">
+        <div class="container">
+            <div class="swiper swiper-certificates">
+                <div class="swiper-top">
+                    <div class="swiper-top-title">
+                        <span>Имею сертификаты об образовании</span>
+                    </div>
+                    <div class="swiper-top-buttons">
+                        <div class="swiper-button-prev">
+                            <img src="/img/svg/button-prev.svg" alt="button-prev">
+                        </div>
+                        <div class="swiper-button-next">
+                            <img src="/img/svg/button-next.svg" alt="button-next">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/img/png/certificates/certificates-1.png" alt="certificates-1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/png/certificates/certificates-2.png" alt="certificates-1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/png/certificates/certificates-1.png" alt="certificates-1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/png/certificates/certificates-2.png" alt="certificates-1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/png/certificates/certificates-1.png" alt="certificates-1">
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="approach" id="approach">
+        <div class="container">
+            <div class="section-title">
+                <h2>Мой подход к астрологии</h2>
+            </div>
+            <div class="approach-content">
+                <div class="approach-items">
+                    <div class="approach-items-back">
+                        <img src="/img/png/approach-items-back.png" alt="approach-items-back">
+                    </div>
+                    <div class="approach-items-line"></div>
+                    <div class="approach-item">
+                        <div class="approach-item-top">
+                            <div class="approach-item-number">
+                                <span>1</span>
+                            </div>
+                            <div class="approach-item-title">
+                                <h3>Классическая западная астрология</h3>
+                            </div>
+                        </div>
+                        <div class="approach-item-bottom">
+                            <span>Астрология - наука о звëздах и их влиянии на Мир и жизнь человека. Это самое высшее знание на Земле, потом только Посвящение. Работаю в классической западной астрологии. Знаю Ведическую астрологию. На сайте есть прогнозы на год, на месяц, статьи и публикации. </span>
+                        </div>
+                    </div>
+                    <div class="approach-item">
+                        <div class="approach-item-top">
+                            <div class="approach-item-number">
+                                <span>2</span>
+                            </div>
+                            <div class="approach-item-title">
+                                <h3>Судьбы</h3>
+                            </div>
+                        </div>
+                        <div class="approach-item-bottom">
+                            <span>Бывают судьбы с фатальной судьбой - рождëнные в затмение или вблизи него. Эти люди пришли с определëнной задачей в этот мир. Бывают судьбы, когда человек имеет больше свободы и у него есть больше выбора. </span>
+                        </div>
+                    </div>
+                    <div class="approach-item">
+                        <div class="approach-item-top">
+                            <div class="approach-item-number">
+                                <span>3</span>
+                            </div>
+                            <div class="approach-item-title">
+                                <h3>Астрология - образ жизни</h3>
+                            </div>
+                        </div>
+                        <div class="approach-item-bottom">
+                            <span>Астрология для меня - это образ жизни. Могу помочь разобраться в ситуации, обозначить определëнные циклы в жизни и назвать точное время предстоящих событий. Обозначить вариантность развития события. Решение принимает сам человек.</span>
+                        </div>
+                    </div>
+                    <div class="approach-item">
+                        <div class="approach-item-top">
+                            <div class="approach-item-number">
+                                <span>4</span>
+                            </div>
+                            <div class="approach-item-title">
+                                <h3>Выбор правильного времени</h3>
+                            </div>
+                        </div>
+                        <div class="approach-item-bottom">
+                            <span>Помогаю выбрать правильное время для операции, открытия своего дела, сделать астрологический аудит бизнеса. Подобрать благоприятное время для любого события.</span>
+                        </div>
+                    </div>
+                    <div class="approach-item">
+                        <div class="approach-item-top">
+                            <div class="approach-item-number">
+                                <span>5</span>
+                            </div>
+                            <div class="approach-item-title">
+                                <h3>Индивидуальная консультация</h3>
+                            </div>
+                        </div>
+                        <div class="approach-item-bottom">
+                            <span>На индивидуальной консультации согласно натальной карте, узаете о своих талантах и способностях, будут ли они иметь отношение к профессии или останутся хобби. Раскрывается информация о родовых программах, о здоровье и профессиональной ориентации, о других важных событиях жизни. </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="approach-btn">
+                    <a href="" class="btn btn--gold">Заказать гороскоп</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="help">
+        <div class="help-back">
+            <img src="/img/png/help-back.png" alt="help-back">
+        </div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Чем я могу помочь?</h2>
+            </div>
+            <div class="help-content">
+                <div class="help-content-text">
+                    <span>Моя цель в астрологии помочь людям понять себя - в первую очередь, справиться с теми задачами, которые стоят перед его душой, раскрыть взгляд на мир через понимание циклов планет. Дать рекомендации и обозначить время, в которое необходимо принять решение. Обозначить задачу, с которой человек прошёл в этот мир, согласно его натальной карты рождения.</span>
+                </div>
+                <div class="help-content-text">
+                    <span>В небесной канцелярии свои правила и время, обозначенное для определëнрого события, чтобы оно было успешным.</span>
+                </div>
+                <div class="help-content-text">
+                    <span>Когда у человека получается решить то, с каким вопросом он пришёл, он становится счастливее и увереннее в себе. 
+                        Решение одного вопроса, часто является ключом к раскрытию кармических программ.</span>
+                </div>
+                <div class="help-content-text">
+                    <span>Что касается отношений - это всегда щепетильная тема и важно понимать, что люди несут друг другу в жизни. Помогаю разобраться в причине данного вопроса, даю рекомендации согласно анализу двух гороскопов.</span>
+                </div>
+                <div class="help-content-text">
+                    <span>Гороскоп человека с точным временем рождения расскажет о его личности и поведении. Скорость Луны расскажет о эмоциональности и адаптации в этом мире. Меркурий об интеллекте и коммуникации. Венера о том, как он может любить и делать выбор. Какой хозяйкой будет девушка в жизни.</span>
+                </div>
+                <div class="help-content-text">
+                    <span>Марс - о его воле и действии. Социальные планеты - Юпитер и Сатурн расскажут о роли в социальной жизни. О долгах, о друзьях, о финансах, о браке и многие другие вопросы раскрываются на консультации. Высшие планеты Уран, Нептун, Плутон - это фактор судьбы и надо смотреть какие аспекты они формируют с планетами натальной карты и в каких домах расположены. Это планеты, которые отвечают за целые поколения, т. к у них бОльшие циклы. </span>
+                </div>
+                <div class="help-content-text">
+                    <span>Детальный анализ гороскопа, связей между планетами в натальной карте покажет направление действий через прогностику. </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reasons">
+        <div class="container">
+            <div class="section-title">
+                <h2>Причины обратиться ко мне</h2>
+            </div>
+            <div class="reasons-content">
+                <div class="reasons-text">
+                    <div class="reasons-text-block">
+                        <span>Опыт в консультировании у меня большой с 1993 года. Я астролог - практик. Есть и астрологические указания на профессиональное консультирование в моëм личном гороскопе. Это и есть моë преимущество перед другими астрологами.</span>
+                    </div>
+                    <div class="reasons-text-block">
+                        <span>Также за плечами 3 астрологических школы. Все знания использую на практике и в консультировании. Знания медицинской астрологии и опыт работы в нетрадиционной медицине позволяют более полно увидеть картину и дать рекомендации.</span>
+                    </div>
+                    <div class="reasons-text-block">
+                        <span>Все консультации идут на обычном привычном языке, понятно и без замысловатых астрологических терминов.</span>
+                    </div>
+                </div>
+                <div class="reasons-item">
+                    <div class="reasons-back-first">
+                        <img src="/img/png/reasons-back-1.png" alt="reason-back-1">
+                    </div>
+                    <div class="reasons-item-top">
+                        <div class="reasons-item-top-number">
+                            <span>1</span>
+                        </div>
+                        <div class="reasons-item-top-title">
+                            <h3>Предварительный анализ</h3>
+                        </div>
+                    </div>
+                    <div class="reasons-item-bottom">
+                        <p>Каждая консультация начинается с подготовки. Сначала устанавливается точное время рождения, даже если есть бирка из роддома или со слов Мамы. Рождение - это первый самостоятельный вздох ребёнка и его можно рассчитать, если есть даты событий близких родственников, которые отображены в гороскопе данной личности. </p>
+                        <p>Астрологические техники позволяют установить время до секунд. А также есть техники, когда можно восстановить время рождения при неизвестности в течение суток.</p>
+                        <p>Для этого необходимо предоставить данные рождерия ч/м/г, известное время и место рождения и дополнительные данные из собственной жизни и жизни близких родственников, которые также отображены в карте рождения. Данные нужны только для обработки информации и установления точного времени рождения. </p>
+                        <p>Только после этой процедуры можно приступать к прогностике и потом проводить консультацию. Каждая консультация уникальна, т. к. нет одинаковых гороскопов, как и одинаковых людей. Каждый человек уникален, имеет свои таланты и способности.</p>
+                    </div>
+                </div>
+                <div class="reasons-item">
+                    <div class="reasons-item-top">
+                        <div class="reasons-item-top-number">
+                            <span>2</span>
+                        </div>
+                        <div class="reasons-item-top-title">
+                            <h3>Раскрытие максимальной информации</h3>
+                        </div>
+                    </div>
+                    <div class="reasons-item-bottom">
+                        <p>Моя задача заключается в том, чтобы раскрыть максимально информацию о человеке и ответить на поставленный вопрос, который волнует в данный период времени. Указать возможные пути решения, дать рекомендации. </p>
+                        <p>В зависимости от вопроса применяются разные астрологические техники, в каждом конкретном случае свой индивидуальный подход. </p>
+                        <p>Раскрытие возможностей, согласно натальной карте даёт большее понимание себя, своих целей и задач, которые стоят перед определëнрого душой. И у каждого своя счастье в жизни. Кто - то счастлив от того что есть друзья, кто - то от того, что путешествует и т. д.</p>
+                        <p>В любом случае, если человек понимет своë предназначение в жизни, он становится счастливым. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services"></section>
+
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="swiper swiper-reviews">
+                <div class="swiper-top">
+                    <div class="swiper-top-title">
+                        <span>Отзывы</span>
+                    </div>
+                    <div class="swiper-top-buttons">
+                        <div class="swiper-button-prev">
+                            <img src="/img/svg/button-prev.svg" alt="button-prev">
+                        </div>
+                        <div class="swiper-button-next">
+                            <img src="/img/svg/button-next.svg" alt="button-next">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <span>Обращалась весной 2022, спрашивала когда будет продажа квартиры. Елена сказала, что в декабре. Та и получилось, 30 декабря прошла сделка. Спасибо!</span>
+                    <img src="/img/svg/reviews.svg" alt="reviews">
+                  </div>
+                  <div class="swiper-slide">
+                    <span>Обращалась весной 2022, спрашивала когда будет продажа квартиры. Елена сказала, что в декабре. Та и получилось, 30 декабря прошла сделка. Спасибо!</span>
+                    <img src="/img/svg/reviews.svg" alt="reviews">
+                  </div>
+                  <div class="swiper-slide">
+                    <span>Обращалась весной 2022, спрашивала когда будет продажа квартиры. Елена сказала, что в декабре. Та и получилось, 30 декабря прошла сделка. Спасибо!</span>
+                    <img src="/img/svg/reviews.svg" alt="reviews">
+                  </div>
+                  <div class="swiper-slide">
+                    <span>Обращалась весной 2022, спрашивала когда будет продажа квартиры. Елена сказала, что в декабре. Та и получилось, 30 декабря прошла сделка. Спасибо!</span>
+                    <img src="/img/svg/reviews.svg" alt="reviews">
+                  </div>
+                  <div class="swiper-slide">
+                    <span>Обращалась весной 2022, спрашивала когда будет продажа квартиры. Елена сказала, что в декабре. Та и получилось, 30 декабря прошла сделка. Спасибо!</span>
+                    <img src="/img/svg/reviews.svg" alt="reviews">
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup horoscope">
+        <div class="container">
+            <div class="popup-content">
+                <div class="popup-top">
+                    <div class="popup-top-title">
+                        <h3>Заказать гороскоп</h3>
+                    </div>
+                    <div class="popup-top-cross">
+                        <img src="/img/svg/cross.svg" alt="cross">
+                    </div>
+                </div>
+                <div class="popup-bottom">
+                    <span>Индивидуальный гороскоп - натальная, карта построенная на дату, время и песто рождения. Это то, что дано судьбой, ваши таланты и способности, профессиональная ориентация, астропсихология. Все прогнозы расчитываются по натальной карте, уточняется время - называется ректификация, применяются разные методы прогнозирования, в зависимости от вопроса. </span>
+                </div>
+                <div class="popup-form">
+                    <form >
+                        <input type="hidden" name="project_name" value="Сайт-Лендинг">
+                        <input type="hidden" name="admin_email" value="filippov-site@yandex.ru">
+                        <input type="hidden" name="form_subject" value="Заказать гороскоп">
+                        <div class="form-line">
+                            <div class="form-block">
+                                <label for="horoscope-question" >Ваш вопрос*</label>
+                                <input type="text" id="horoscope-question" placeholder="Вопрос, который вас интересует" name="questions">
+                            </div>
+                        </div>
+                        <div class="form-line">
+                            <div class="form-block">
+                                <label for="horoscope-fio">ФИО*</label>
+                                <input type="text" id="horoscope-fio" placeholder="ФИО" name="fio">
+                            </div>
+                            <div class="form-block date-input">
+                                <label for="horoscope-date">Дата рождения</label>
+                                <input type="text" id="horoscope-date" placeholder="дд.мм.гггг">
+                            </div>
+                            <div class="form-block">
+                                <label for="horoscope-time">Время рождения</label>
+                                <input type="text" id="horoscope-time" placeholder="00:00">
+                            </div>
+                        </div>
+                        <div class="form-line">
+                            <div class="form-block">
+                                <label for="horoscope-place">Место рождения</label>
+                                <input type="text" id="horoscope-place" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-line">
+                            <div class="form-block">
+                                <label for="horoscope-mail">E-mail</label>
+                                <input type="text" id="horoscope-mail" placeholder="test@mail.ru">
+                            </div>
+                            <div class="form-block">
+                                <label for="horoscope-phone">Телефон</label>
+                                <input type="text" id="horoscope-phone" placeholder="+7(999)999-99-99">
+                            </div>
+                        </div>
+                        <div class="form-line">
+                            <div class="form-block">
+                                <label for="horoscope-parents">Дата и причина ухода родителей или одного из них</label>
+                                <textarea name="" id="horoscope-parents" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="form-block">
+                                <label for="horoscope-grandparents">Дата и причина ухода бабушки, дедушки</label>
+                                <textarea name="" id="horoscope-grandparents" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-line">
+                            <div class="form-block date-input">
+                                <label for="horoscope-datemarriage">Дата брака</label>
+                                <input type="text" id="datemarriage" placeholder="дд.мм.гггг" class="">
+                            </div>
+                        </div>
+                        <div class="form-line">
+                            <div class="form-block">
+                                <label for="horoscope-another">Другие важные события и их дата (рождение детей, дата операции (орган), дата аварии и др.)</label>
+                                <textarea name="horoscope-another" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-button">
+                            <button class="btn btn--purple">Заказать гороскоп</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-line"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <span>© 2023, Елена Кузнецова - астролог, нумеролог, таролог</span>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-right-socials">
+                        <a href="">
+                            <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25.534 5.07584C22.7373 2.28882 19.0083 0.740479 15.0721 0.740479C6.88912 0.740479 0.259831 7.34675 0.259831 15.5014C0.259831 18.0819 0.984911 20.6625 2.2279 22.8302L0.15625 30.4687L8.02853 28.4042C10.2038 29.5397 12.5862 30.159 15.0721 30.159C23.2552 30.159 29.8845 23.5528 29.8845 15.3981C29.7809 11.5789 28.3307 7.86286 25.534 5.07584ZM22.2193 20.7657C21.9086 21.5915 20.4584 22.4173 19.7334 22.5205C19.1119 22.6237 18.2832 22.6238 17.4545 22.4173C16.9366 22.2109 16.2116 22.0044 15.3829 21.5915C11.6539 20.0432 9.27152 16.3271 9.06436 16.0175C8.85719 15.811 7.51062 14.0562 7.51062 12.1982C7.51062 10.3402 8.44286 9.51443 8.75361 9.10154C9.06435 8.68865 9.47869 8.68865 9.78943 8.68865C9.9966 8.68865 10.3073 8.68865 10.5145 8.68865C10.7217 8.68865 11.0324 8.58542 11.3432 9.30799C11.6539 10.0305 12.379 11.8886 12.4826 11.9918C12.5862 12.1982 12.5862 12.4047 12.4826 12.6111C12.379 12.8176 12.2754 13.024 12.0682 13.2305C11.8611 13.4369 11.6539 13.7466 11.5503 13.8498C11.3432 14.0562 11.136 14.2627 11.3432 14.5724C11.5503 14.9852 12.2754 16.1207 13.4148 17.1529C14.865 18.3916 16.0044 18.8045 16.4187 19.0109C16.8331 19.2174 17.0402 19.1142 17.2474 18.9077C17.4545 18.7013 18.1796 17.8755 18.3868 17.4626C18.594 17.0497 18.9047 17.1529 19.2155 17.2562C19.5262 17.3594 21.3907 18.2884 21.7014 18.4948C22.1158 18.7013 22.3229 18.8045 22.4265 18.9077C22.5301 19.2174 22.5301 19.94 22.2193 20.7657Z" fill="#170E39"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer-right-socials">
+                        <a href="">
+                            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.6553 2.71462C18.4076 2.71462 18.9193 2.71462 20.4543 2.71462C21.8187 2.71462 22.501 3.05573 23.0126 3.22629C23.6949 3.56741 24.2066 3.73796 24.7182 4.24964C25.2299 4.76131 25.571 5.27298 25.7416 5.95521C25.9121 6.46689 26.0827 7.14912 26.2532 8.51358C26.2532 10.0486 26.2532 10.3897 26.2532 14.3125C26.2532 18.2354 26.2532 18.5765 26.2532 20.1115C26.2532 21.476 25.9121 22.1582 25.7416 22.6699C25.4005 23.3521 25.2299 23.8638 24.7182 24.3755C24.2066 24.8871 23.6949 25.2282 23.0126 25.3988C22.501 25.5694 21.8187 25.7399 20.4543 25.9105C18.9193 25.9105 18.5781 25.9105 14.6553 25.9105C10.7325 25.9105 10.3914 25.9105 8.85635 25.9105C7.49189 25.9105 6.80966 25.5694 6.29799 25.3988C5.61576 25.0577 5.10408 24.8871 4.59241 24.3755C4.08074 23.8638 3.73962 23.3521 3.56906 22.6699C3.39851 22.1582 3.22795 21.476 3.05739 20.1115C3.05739 18.5765 3.05739 18.2354 3.05739 14.3125C3.05739 10.3897 3.05739 10.0486 3.05739 8.51358C3.05739 7.14912 3.39851 6.46689 3.56906 5.95521C3.91018 5.27298 4.08074 4.76131 4.59241 4.24964C5.10408 3.73796 5.61576 3.39685 6.29799 3.22629C6.80966 3.05573 7.49189 2.88517 8.85635 2.71462C10.3914 2.71462 10.903 2.71462 14.6553 2.71462ZM14.6553 0.15625C10.7325 0.15625 10.3914 0.15625 8.85635 0.15625C7.32133 0.15625 6.29799 0.497366 5.4452 0.838482C4.59241 1.1796 3.73962 1.69127 2.88683 2.54406C2.03404 3.39685 1.69293 4.07908 1.18126 5.10243C0.84014 5.95521 0.669581 6.97856 0.499023 8.51358C0.499023 10.0486 0.499023 10.5603 0.499023 14.3125C0.499023 18.2354 0.499023 18.5765 0.499023 20.1115C0.499023 21.6465 0.84014 22.6699 1.18126 23.5227C1.52237 24.3755 2.03404 25.2282 2.88683 26.081C3.73962 26.9338 4.42185 27.2749 5.4452 27.7866C6.29799 28.1277 7.32133 28.2983 8.85635 28.4688C10.3914 28.4688 10.903 28.4688 14.6553 28.4688C18.4076 28.4688 18.9193 28.4688 20.4543 28.4688C21.9893 28.4688 23.0126 28.1277 23.8654 27.7866C24.7182 27.4455 25.571 26.9338 26.4238 26.081C27.2766 25.2282 27.6177 24.546 28.1294 23.5227C28.4705 22.6699 28.6411 21.6465 28.8116 20.1115C28.8116 18.5765 28.8116 18.0648 28.8116 14.3125C28.8116 10.5603 28.8116 10.0486 28.8116 8.51358C28.8116 6.97856 28.4705 5.95521 28.1294 5.10243C27.7883 4.24964 27.2766 3.39685 26.4238 2.54406C25.571 1.69127 24.8888 1.35016 23.8654 0.838482C23.0126 0.497366 21.9893 0.326808 20.4543 0.15625C18.9193 0.15625 18.5781 0.15625 14.6553 0.15625Z" fill="#170E39"/>
+                                <path d="M14.6553 6.97856C10.5619 6.97856 7.32133 10.2192 7.32133 14.3125C7.32133 18.4059 10.5619 21.6465 14.6553 21.6465C18.7487 21.6465 21.9893 18.4059 21.9893 14.3125C21.9893 10.2192 18.7487 6.97856 14.6553 6.97856ZM14.6553 19.0882C12.097 19.0882 9.8797 17.0415 9.8797 14.3125C9.8797 11.7542 11.9264 9.53693 14.6553 9.53693C17.2137 9.53693 19.4309 11.5836 19.4309 14.3125C19.4309 16.8709 17.2137 19.0882 14.6553 19.0882Z" fill="#170E39"/>
+                                <path d="M22.1599 8.51358C23.1018 8.51358 23.8654 7.74997 23.8654 6.808C23.8654 5.86604 23.1018 5.10243 22.1599 5.10243C21.2179 5.10243 20.4543 5.86604 20.4543 6.808C20.4543 7.74997 21.2179 8.51358 22.1599 8.51358Z" fill="#170E39"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer-right-socials">
+                        <a href="">
+                            <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27.3247 1.84008L23.0701 24.0514C23.0701 24.0514 22.4748 25.5914 20.8395 24.8528L11.0231 17.0586L10.9776 17.0356C12.3036 15.8027 22.5857 6.22915 23.0351 5.7952C23.7308 5.12312 23.2989 4.72301 22.4912 5.2307L7.30315 15.2188L1.44364 13.1772C1.44364 13.1772 0.52153 12.8375 0.432821 12.099C0.342944 11.3592 1.47399 10.9591 1.47399 10.9591L25.3614 1.25503C25.3614 1.25503 27.3247 0.361742 27.3247 1.84008Z" fill="#170E39"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer-right-socials">
+                        <a href="">
+                            <svg width="18" height="33" viewBox="0 0 18 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6892 17.8292H16.9584L17.7857 12.4438H11.6881V9.50037C11.6881 7.26318 12.4147 5.27936 14.4947 5.27936H17.8372V0.579642C17.2499 0.499858 16.0079 0.325195 13.661 0.325195C8.76042 0.325195 5.88736 2.92896 5.88736 8.86102V12.4438H0.849609V17.8292H5.88736V32.6313C6.88506 32.7822 7.89561 32.8847 8.93295 32.8847C9.87063 32.8847 10.7858 32.7984 11.6892 32.6755V17.8292Z" fill="#170E39"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-----JQUERY------>
+    <script src="/jquery/jquery-3-6-4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
